@@ -1,0 +1,262 @@
+// TABLETS & SMALLER
+@media (max-width: 820px) {
+  #header-home {
+    height: 48rem;
+    .header-content {
+      // justify-content: flex-start;
+      padding-top: 5rem;
+    }
+  }
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// SMARTPHONES
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1.6rem;
+    }
+  }
+  #header {
+    &-home {
+      height: 59rem;
+
+      border-bottom: 0.3rem solid $main-color;
+
+      .header-content {
+        padding-top: 10rem;
+
+        h1 {
+          font-size: 5rem;
+        }
+      }
+    }
+    &-inner {
+      height: 15rem;
+    }
+  }
+
+  #home {
+    &-a {
+      .specials > * {
+        border-bottom: 0.1rem dotted $light-color;
+        padding-bottom: 1.6rem;
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+    &-b {
+      .stats div {
+        padding: 3.2rem 0 1.6rem;
+      }
+    }
+  }
+  // STACK GRID COLUMNS
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  .items {
+    grid-template-columns: 1fr;
+  }
+
+  // CONTACT
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          'name' 'email' 'subject' 'phone'
+          'message';
+      }
+    }
+    &-b {
+      .contact-info {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        div {
+          margin-bottom: 1.6rem;
+          padding-bottom: 1.6rem;
+          border-bottom: 0.1rem dotted #555;
+          &:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border: none;
+          }
+        }
+      }
+    }
+    &-c {
+      h1 {
+        font-size: 3.4rem;
+      }
+    }
+  }
+
+  // ABOUT
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          'bioimage'
+          'bio'
+          'aw1'
+          'aw2'
+          'aw3';
+      }
+    }
+    &-c {
+      padding: 2rem 0;
+
+      .about-logos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 90%;
+
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        img:last-child,
+        img:nth-child(2) {
+          justify-self: flex-end;
+        }
+      }
+    }
+    &-d {
+      .testimonials div {
+        text-align: center;
+        display: flex;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  // FOOTER
+  .footer {
+    &-text {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding-top: 2rem;
+
+      p:nth-child(2) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+// LANDSCAPE
+@media (max-height: 580px) {
+  // HOME
+  #header {
+    &-home {
+      // height: 40rem;
+      // height: 80vh;
+      .header-content {
+        // padding-top: 8rem;
+      }
+    }
+  }
+
+  //WORK
+  // .items {
+  //   grid-template-columns: repeat(2, 1fr);
+  // }
+}
+@media (max-height: 330px) {
+  #header {
+    &-home {
+      .header-content {
+        padding-top: 3rem;
+      }
+    }
+  }
+  #home-a .specials,
+  #home-c .process {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .footer {
+    &-icons {
+      // background-color: red;
+      margin-bottom: 1rem;
+    }
+  }
+  #about {
+    &-c {
+      padding: 2rem 0;
+
+      .about-logos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 90%;
+
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        img:last-child,
+        img:nth-child(2) {
+          justify-self: flex-end;
+        }
+      }
+    }
+    &-d {
+      .testimonials {
+        grid-template-columns: repeat(2, 1fr);
+        div {
+          text-align: center;
+          display: flex;
+          padding: 1rem;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 350px) {
+  // HEADER
+  #header {
+    &-home {
+      height: 47rem;
+
+      .header-content {
+        h1 {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+
+  // FOOTER
+  #main-footer {
+    .footer {
+      &-content {
+        text-align: center;
+      }
+      &-icons {
+        display: flex;
+      }
+      &-text p:nth-child(1) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  // WORK
+  .items {
+    grid-template-columns: 1fr;
+  }
+}

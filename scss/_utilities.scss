@@ -1,0 +1,166 @@
+// CONTAINER
+.container {
+  max-width: $website-width;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+// BUTTONS
+%btn-shared {
+  display: inline-block;
+  // border-radius: 1.4rem;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $main-color;
+  }
+
+  &-light {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $light-color;
+  }
+
+  &-dark {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $dark-color;
+  }
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-'] {
+  // background-color: $main-color;
+}
+
+// TEXT STYLES
+
+.text-emphasis {
+  font-weight: bold;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  color: $dark-color;
+  // color: #fff;
+  // color: ;
+  // background-color: rgba(255, 255, 255, 0.8);
+  background-color: #fff;
+  border: 3px dotted #ccc;
+  // background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  padding: 0.4rem;
+  // background-color: #4285f4;
+}
+
+.text-main {
+  color: $main-color;
+  // color: #4285f4;
+  font-size: 4rem;
+  font-weight: bold;
+  border-bottom: 0.3rem dotted #4285f4;
+  padding: 0.3rem;
+  // background-color: red;
+  // background-color: rgba(255, 255, 255, 0.2);
+  // border-radius: 2rem;
+  // border-color: #ccc;
+}
+.lead {
+  font-size: 2.1rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// PADDINGS
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+// MARGINS
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+
+// BOTTOM LINE
+.bottom-line {
+  height: 4px;
+  width: 6rem;
+  background-color: $main-color;
+  background-color: #4285f4;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+// SECTION
+.section-title {
+  font-size: 3.2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+// BACKGROUNDS
+.bg {
+  &-main {
+    background-color: $main-color;
+    // background-color: #4285f4;
+    color: #fff;
+    color: set-text-color($main-color);
+  }
+
+  &-dark {
+    background-color: $dark-color;
+    color: #fff;
+    color: set-text-color($main-color);
+  }
+
+  &-light {
+    background-color: $light-color;
+    color: $dark-color;
+    color: set-text-color($main-color);
+  }
+
+  &-medium {
+    background-color: $medium-color;
+    color: #fff;
+    color: set-text-color($main-color);
+  }
+}
+
+#logo.border {
+  border: 2px dotted #ccc;
+  padding: 0 0.9rem;
+}

@@ -1,0 +1,28 @@
+// VARIABLES
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+$primary-font: 'Dosis', sans-serif;
+// $primary-font: 'Source Code Pro', monospace;
+// $primary-font: 'Oswald', sans-serif;
+$website-width: 108rem;
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+
+// #4285f4
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: url('../img/showcase/01.jpg');
+$bg-image: url('../img/showcase/012.jpg');
+$bg-section: url('../img/showcase/03.jpg');
+
+// SET TEXT COLOR
+// @function set-text-color($color) {
+//   @if (lightness($color) > 50) {
+//     @return #000;
+//   } @else {
+//     @return #fff;
+//   }
+// }
+
+// color: set-text-color($dark-color);
