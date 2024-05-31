@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding: 0 1.5rem;
   overflow: hidden;
+  height: 100%;
 }
 
 // BUTTONS
@@ -13,14 +14,32 @@
   padding: 0.8rem 2rem;
   transition: all 0.5s;
   border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 2rem;
   cursor: pointer;
+
+  &:hover {
+    transform: scale(0.96);
+  }
+  &:hover i {
+    transform: translateX(3px);
+  }
 }
 
 .btn {
+  &-secondary {
+    @extend %btn-shared;
+    background: #4285f4;
+    color: $dark-color;
+    color: #fff;
+  }
   &-main {
     @extend %btn-shared;
     color: #333;
-    background-color: $main-color;
+    color: #fff;
+    background-color: $primary-color;
   }
 
   &-light {
@@ -36,10 +55,19 @@
   }
 }
 
+.flex-buttons {
+  display: flex;
+  justify-content: center;
+
+  .btn-main {
+    margin-right: 1rem;
+  }
+}
+
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-'] {
-  // background-color: $main-color;
+  // background-color: $primary-color;
 }
 
 // TEXT STYLES
@@ -58,9 +86,13 @@ input[class^='btn-'] {
   padding: 0.4rem;
   // background-color: #4285f4;
 }
+.text-bold {
+  font-weight: bold;
+  color: #4285f4;
+}
 
 .text-main {
-  color: $main-color;
+  color: $primary-color;
   // color: #4285f4;
   font-size: 4rem;
   font-weight: bold;
@@ -116,7 +148,7 @@ input[class^='btn-'] {
 .bottom-line {
   height: 4px;
   width: 6rem;
-  background-color: $main-color;
+  background-color: $primary-color;
   background-color: #4285f4;
   display: block;
   margin: 0 auto 1rem auto;
@@ -135,32 +167,27 @@ input[class^='btn-'] {
 // BACKGROUNDS
 .bg {
   &-main {
-    background-color: $main-color;
+    background-color: $primary-color;
     // background-color: #4285f4;
     color: #fff;
-    color: set-text-color($main-color);
+    color: set-text-color($primary-color);
   }
 
   &-dark {
     background-color: $dark-color;
     color: #fff;
-    color: set-text-color($main-color);
+    color: set-text-color($primary-color);
   }
 
   &-light {
     background-color: $light-color;
     color: $dark-color;
-    color: set-text-color($main-color);
+    color: set-text-color($primary-color);
   }
 
   &-medium {
     background-color: $medium-color;
     color: #fff;
-    color: set-text-color($main-color);
+    color: set-text-color($primary-color);
   }
-}
-
-#logo.border {
-  border: 2px dotted #ccc;
-  padding: 0 0.9rem;
 }

@@ -1,6 +1,10 @@
 @import 'config';
+@import 'scroll';
 @import 'utilities';
 @import 'item_grid';
+@import 'navbar';
+@import 'header';
+@import 'footer';
 
 // RESET CSS
 * {
@@ -14,8 +18,8 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
   font-family: $primary-font;
+  font-size: 1.6rem;
   line-height: 1.6;
   background-color: #fff;
 }
@@ -38,146 +42,6 @@ h4 {
 img {
   max-width: 100%;
 }
-.btn-cv {
-  background-color: #fff;
-  background: #4285f4;
-  color: $dark-color;
-  color: #fff;
-}
-
-// LOGO
-#logo {
-  font-size: 3rem;
-  font-weight: bold;
-  // color: $main-color !important;
-  text-transform: uppercase;
-  // border: 0.1rem solid red;
-}
-
-// MAIN NAV
-#main-nav {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 2rem;
-
-  ul {
-    display: flex;
-    align-items: center;
-  }
-
-  li {
-    padding: 1rem 1.5rem;
-  }
-
-  a {
-    color: #fff;
-    text-transform: uppercase;
-    border-bottom: 0.3rem transparent dotted;
-    padding-bottom: 0.5rem;
-    transition: border-color 0.5s;
-
-    &:hover {
-      border-color: $medium-color;
-    }
-
-    &.current {
-      border-color: $main-color;
-      font-weight: bold;
-      // border-radius: 1rem;
-    }
-  }
-}
-
-// HEADER
-#header {
-  &-home {
-    background-image: $bg-image;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 80vh;
-    background-attachment: fixed;
-    color: #fff;
-    position: relative;
-    z-index: 2;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
-
-      z-index: -11;
-    }
-    .btn {
-      font-weight: bold;
-      font-size: 2rem;
-      border-radius: 2rem;
-      background-color: $main-color;
-      color: #fff;
-      // border: 3px dotted #ccc;
-      &:hover {
-        transform: scale(0.96);
-      }
-      &:hover i {
-        transform: translateX(3px);
-      }
-    }
-    .container {
-      height: 100%;
-    }
-    .header-content {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      height: 100%;
-      justify-content: center;
-      text-align: center;
-      padding-bottom: 10%;
-
-      h1 {
-        font-size: 6.4rem;
-        line-height: 1.2;
-      }
-      p {
-        font-size: 3.5rem;
-      }
-
-      .header-buttons {
-        // margin-top: 2rem;
-        display: flex;
-        justify-content: center;
-        // display: none;
-
-        // background-color: red;
-        .btn {
-          margin-right: 1rem;
-        }
-        .btn-cv {
-          background-color: #fff;
-          background: #4285f4;
-          color: $dark-color;
-          color: #fff;
-        }
-      }
-    }
-  }
-
-  // HEADER INNER
-  &-inner {
-    background-image: $bg-image;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 20%;
-    background-position-y: 30%;
-    height: 8.8rem;
-    border-bottom: 0.3rem solid $main-color;
-    color: #fff;
-  }
-}
 
 // SECTIONS
 #home {
@@ -195,11 +59,12 @@ img {
     .section-title {
       font-weight: bold;
       font-size: 5rem;
-      color: $main-color;
+      color: $primary-color;
     }
     .lead {
       font-size: 2.8rem;
       text-transform: none;
+      font-weight: 300;
       line-height: 1.2;
       max-width: 80%;
     }
@@ -233,9 +98,9 @@ img {
         font-size: 2rem;
         font-weight: bold;
         border-radius: 2rem;
-        // background-color: $main-color;
+        // background-color: $primary-color;
 
-        // border: 3px dotted $main-color;
+        // border: 3px dotted $primary-color;
         margin-right: 1rem;
         margin-top: 2rem;
 
@@ -251,11 +116,11 @@ img {
   }
   // HOME SECTION A
   &-a {
-    min-height: 80vh;
+    // min-height: 80vh;
     align-items: center;
     justify-content: center;
     display: flex;
-    // border-bottom: 4px dotted $main-color;
+    // border-bottom: 4px dotted $primary-color;
     // border: ;
     .specials {
       margin-top: 3rem;
@@ -263,16 +128,16 @@ img {
       grid-gap: 1rem;
       grid-template-columns: repeat(4, 1fr);
       h3 {
-        // color: $main-color;
+        // color: $primary-color;
         font-weight: bold;
         margin-top: 0.4rem;
       }
       .fas {
-        color: $main-color;
+        color: $primary-color;
         color: $dark-color;
         // color: #fff;
         border: 3px dotted $light-color;
-        background-color: $main-color;
+        background-color: $primary-color;
 
         border-radius: 2rem;
         padding: 2rem;
@@ -333,7 +198,7 @@ img {
         }
         &:nth-child(even) {
           background-color: $dark-color;
-          background-color: $main-color;
+          background-color: $primary-color;
           background-color: #4285f4;
           color: #fff;
         }
@@ -346,7 +211,7 @@ img {
           border-bottom-right-radius: 2rem;
         }
         // &:hover {
-        //   background-color: $main-color;
+        //   background-color: $primary-color;
         // }
       }
     }
@@ -381,7 +246,7 @@ img {
         justify-content: center;
 
         font-size: 25px;
-        background-color: $main-color;
+        background-color: $primary-color;
         background-color: #4285f4;
         border-radius: 50%;
         height: 4rem;
@@ -408,7 +273,7 @@ img {
         transition: all 0.8s;
 
         &:hover {
-          background-color: $main-color;
+          background-color: $primary-color;
           width: 11rem;
           height: 11rem;
           line-height: 11rem;
@@ -455,9 +320,16 @@ img {
 
     .bio {
       grid-area: bio;
-      border-left: 0.3rem solid $main-color;
+      border-left: 0.3rem solid $primary-color;
       padding: 0.8rem;
       // justify-self: flex-start;
+      h4 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
     }
 
     .award-1 {
@@ -473,7 +345,7 @@ img {
     .award-1 .fas,
     .award-2 .fas,
     .award-3 .fas {
-      color: $main-color;
+      color: $primary-color;
       margin: 1rem;
     }
   }
@@ -491,7 +363,7 @@ img {
         height: 100%;
         color: #fff;
         text-align: center;
-        background-color: $main-color;
+        background-color: $primary-color;
       }
     }
   }
@@ -552,6 +424,32 @@ img {
 // CONTACT PAGE
 #contact {
   &-a {
+    .lead:last-of-type {
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+    .contact-info-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      // background-color: $primary-color;
+      margin: 0 auto;
+      width: 40%;
+      gap: 1rem;
+
+      a {
+        background-color: #4285f4;
+        // background-color: $dark;
+        color: #fff;
+        padding: 0.71rem;
+        // border: 3px dotted $primary-color;
+        border-radius: 2rem;
+        transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        &:hover {
+          background-color: $primary-color;
+        }
+      }
+    }
     .text-fields {
       display: grid;
       grid-template-areas:
@@ -593,6 +491,12 @@ img {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       text-align: center;
+      width: 70%;
+      gap: 2rem;
+      margin: 0 auto;
+      div {
+        background-color: red;
+      }
     }
   }
   &-c {
@@ -604,126 +508,7 @@ img {
 }
 
 // FOOTER
-#main-footer {
-  background-color: $dark-color;
-  color: #fff;
-  padding: 2rem;
 
-  .footer {
-    &-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-    }
-
-    &-icons i {
-      margin: 0 0.5rem;
-      background-color: $main-color;
-      border-radius: 1.2rem;
-      color: $dark-color;
-      padding: 0.5rem;
-      transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-    }
-
-    &-icons i:hover {
-      background-color: $light-color;
-    }
-
-    &-text {
-      margin-top: 2rem;
-      border-top: 3px dotted #424850;
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-    }
-
-    &-text p {
-      font-size: 1.8rem;
-      padding: 0.5rem;
-    }
-
-    &-text a {
-      color: $main-color;
-      font-weight: bold;
-      padding: 0.3rem;
-    }
-    &-nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-
-      ul {
-        display: flex;
-        align-items: center;
-        width: 34%;
-        margin-top: 2rem;
-        justify-content: space-around;
-        border: 0.2rem dotted $main-color;
-        border-radius: 1rem;
-
-        a {
-          font-weight: bold;
-          color: #fff;
-          font-size: 2rem;
-          padding: 1rem;
-          transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-
-          &:hover {
-            opacity: 0.3;
-          }
-        }
-      }
-    }
-  }
-}
-
-// SCROLLBAR
-::-webkit-scrollbar {
-  width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: $main-color;
-  border-radius: 2rem;
-  border: 0.2rem dotted $dark-color;
-}
-
-::-webkit-scrollbar-track {
-  background-color: $dark-color;
-}
-
-// SCROLLTOP
-.scrollTop {
-  position: fixed;
-  right: 0rem;
-  bottom: 80rem;
-  font-size: 4rem;
-  bottom: 80rem;
-  font-size: 4rem;
-  background-color: $main-color;
-  color: $light-color;
-  border-radius: 10px;
-  cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.8s;
-  z-index: 1000;
-}
-
-.scrollTop.active {
-  visibility: visible;
-  opacity: 1;
-  bottom: 20rem;
-  right: 1rem;
-  bottom: 8rem;
-}
-
-.scrollTop:hover {
-  background-color: $light-color;
-  color: $main-color;
-}
 .grid {
   &-container {
     display: grid;
@@ -761,7 +546,7 @@ img {
     }
 
     // .bottom-line {
-    //   background-color: $main-color;
+    //   background-color: $primary-color;
     //   width: 30%;
     //   display: none;
     //   margin: 0 auto 1rem auto;
@@ -776,7 +561,7 @@ img {
       // color: #4285f4;
     }
     h3 {
-      // color: $main-color;
+      // color: $primary-color;
       text-align: left;
       // color: $dark-color;
       // font-size: 2rem;
@@ -861,7 +646,7 @@ img {
   &-a {
     h2:nth-of-type(2) {
       margin-bottom: 0;
-      color: $main-color;
+      color: $primary-color;
     }
 
     .lead {
@@ -873,4 +658,10 @@ img {
       // color: red;
     }
   }
+}
+.btn-cv {
+  background-color: #fff;
+  background: #4285f4;
+  color: $dark-color;
+  color: #fff;
 }

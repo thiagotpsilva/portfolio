@@ -6,12 +6,15 @@ $primary-font: 'Dosis', sans-serif;
 // $primary-font: 'Source Code Pro', monospace;
 // $primary-font: 'Oswald', sans-serif;
 $website-width: 108rem;
-$main-color: #ffbc00;
-$light-color: #f4f4f4;
 
-// #4285f4
+$primary-color: #ffbc00;
+$secondary-color: #4285f4;
+$light-color: #f4f4f4;
 $medium-color: #ccc;
 $dark-color: #333;
+$overlay-color: rgba(0, 0, 0, 0.6);
+// #4285f4
+
 $bg-image: url('../img/showcase/01.jpg');
 $bg-image: url('../img/showcase/012.jpg');
 $bg-section: url('../img/showcase/03.jpg');

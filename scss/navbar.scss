@@ -1,0 +1,40 @@
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+
+  #logo {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    border: 2px dotted $medium-color;
+    text-transform: uppercase;
+    padding: 0 0.9rem;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      padding: 1rem 1.5rem;
+
+      a {
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 0.3rem transparent dotted;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+
+        &:hover {
+          border-color: $medium-color;
+        }
+
+        &.current {
+          border-color: $primary-color;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
