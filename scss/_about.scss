@@ -1,0 +1,126 @@
+// ABOUT PAGE SECTIONS
+#about {
+  &-a {
+    .about-info {
+      display: grid;
+      grid-template-areas:
+        'bioimage bio bio'
+        'aw1 aw2 aw3';
+      gap: 1.2rem;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    // GRID AREA
+    .bio-image {
+      grid-area: bioimage;
+      width: 40rem;
+      height: 24rem;
+      border-radius: 2rem;
+      justify-self: end;
+      object-fit: cover;
+      object-position: bottom;
+    }
+
+    .bio {
+      grid-area: bio;
+      border-left: 0.3rem solid $primary-color;
+      padding: 0.8rem;
+
+      h4 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        padding: 0 1rem;
+        text-align: justify;
+      }
+    }
+
+    .award-1 {
+      grid-area: aw1;
+    }
+    .award-2 {
+      grid-area: aw2;
+    }
+    .award-3 {
+      grid-area: aw3;
+    }
+
+    .award-1 .fas,
+    .award-2 .fas,
+    .award-3 .fas {
+      color: $primary-color;
+      margin: 1rem;
+    }
+  }
+
+  &-b {
+    .progress {
+      overflow: hidden;
+      height: 2rem;
+      background-color: $medium-color;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+
+      div {
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        background-color: $primary-color;
+      }
+    }
+  }
+
+  &-c {
+    .about-logos {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 1rem;
+      margin: 0 auto;
+      width: 70%;
+
+      img {
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      img:last-of-type {
+        width: 90%;
+        object-fit: fill;
+      }
+    }
+  }
+
+  &-d {
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.8rem;
+
+      ul {
+        list-style-type: none;
+        margin-top: 1.6rem;
+        display: flex;
+        align-items: center;
+      }
+
+      p {
+        border: 0.1rem solid $medium-color;
+        border-radius: 0.5rem;
+        padding: 0.8rem;
+      }
+
+      img {
+        width: 5rem;
+        height: 5rem;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 0.8rem;
+      }
+    }
+  }
+}

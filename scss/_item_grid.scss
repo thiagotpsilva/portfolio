@@ -12,6 +12,7 @@
   background-color: $primary-color;
   overflow: hidden;
   height: 40rem;
+  width: 100%;
   // border-radius: 2rem;
   // width: 100%;
 
@@ -114,9 +115,14 @@
     border-radius: 2rem;
     padding: 1rem;
     color: #fff;
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: bold;
+    // font-weight: 400;
     background-color: rgba(0, 0, 0, 0.3);
+    &:hover {
+      transform: scale(0.98);
+      background-color: $secondary-color;
+    }
     i {
       color: #fff;
       margin-left: 1rem;

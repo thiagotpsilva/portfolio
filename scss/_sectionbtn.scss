@@ -1,0 +1,45 @@
+// SECTION BUTTONS
+#section-buttons {
+  background-image: $bg-section;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 60vh;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $overlay-color;
+    z-index: -1;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-title {
+    font-weight: bold;
+    font-size: 5rem;
+    color: $primary-color;
+  }
+
+  .lead {
+    font-size: 2.8rem;
+    text-transform: none;
+    font-weight: 300;
+    line-height: 1.2;
+    max-width: 80%;
+  }
+}
