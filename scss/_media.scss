@@ -80,13 +80,15 @@
   }
 
   // FOOTER
-  .footer {
-    &-nav ul {
-      width: 70% !important;
-    }
+  #main-footer {
+    .footer {
+      &-nav ul {
+        width: 80%;
+      }
 
-    &-text p {
-      font-size: 1.5rem !important;
+      &-text p {
+        font-size: 1.5rem !important;
+      }
     }
   }
 }
@@ -241,7 +243,7 @@
     &-nav ul {
       display: flex;
       justify-content: center;
-      width: 70% !important;
+      // width: 70% !important;
     }
   }
 }
