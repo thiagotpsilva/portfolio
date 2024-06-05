@@ -1,5 +1,6 @@
 // TABLETS & SMALLER
 @media (max-width: 820px) {
+  // HEADER HOME
   #header-home {
     height: 45rem;
 
@@ -54,6 +55,15 @@
 
     &-right {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  // CONTACT PAGE
+  #contact {
+    &-a {
+      .contact-info-container {
+        width: 100%;
+      }
     }
   }
 
@@ -138,6 +148,9 @@
 
   // CONTACT
   #contact {
+    // .contact-info-container {
+    //   width: 100%;
+    // }
     &-a {
       .text-fields {
         grid-template-areas:

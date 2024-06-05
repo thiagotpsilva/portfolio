@@ -815,6 +815,8 @@ img {
     text-align: center; }
   .grid-right {
     grid-template-columns: repeat(2, 1fr); }
+  #contact-a .contact-info-container {
+    width: 100%; }
   #work-a .lead {
     line-height: 1.4; }
   .items {
