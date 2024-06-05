@@ -823,9 +823,9 @@ img {
     grid-template-columns: repeat(2, 1fr);
     width: 94%;
     margin: 0 auto; }
-  .footer-nav ul {
-    width: 70% !important; }
-  .footer-text p {
+  #main-footer .footer-nav ul {
+    width: 80%; }
+  #main-footer .footer-text p {
     font-size: 1.5rem !important; } }
 
 @media (max-width: 500px) {
@@ -898,8 +898,7 @@ img {
       margin-bottom: 1rem; }
   .footer-nav ul {
     display: flex;
-    justify-content: center;
-    width: 70% !important; } }
+    justify-content: center; } }
 
 @media (max-height: 330px) {
   #header-home .header-content {
