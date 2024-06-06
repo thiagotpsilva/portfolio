@@ -260,32 +260,22 @@
 
   // CONTACT
   #contact {
-    // .contact-info-container {
-    //   width: 100%;
+    // &-b {
+    //   .contact-info {
+    //     grid-template-columns: 1fr;
+    //     gap: 2rem;
+    //     div {
+    //       margin-bottom: 1.6rem;
+    //       padding-bottom: 1.6rem;
+    //       border-bottom: 0.1rem dotted #555;
+    //       &:last-child {
+    //         padding-bottom: 0;
+    //         margin-bottom: 0;
+    //         border: none;
+    //       }
+    //     }
+    //   }
     // }
-    &-a {
-      .text-fields {
-        grid-template-areas:
-          'name' 'email' 'subject' 'phone'
-          'message';
-      }
-    }
-    &-b {
-      .contact-info {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        div {
-          margin-bottom: 1.6rem;
-          padding-bottom: 1.6rem;
-          border-bottom: 0.1rem dotted #555;
-          &:last-child {
-            padding-bottom: 0;
-            margin-bottom: 0;
-            border: none;
-          }
-        }
-      }
-    }
     &-c {
       h1 {
         font-size: 3.4rem;

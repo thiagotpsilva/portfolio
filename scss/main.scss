@@ -193,55 +193,21 @@
         }
       }
     }
-    .text-fields {
-      display: grid;
-      grid-template-areas:
-        'name email'
-        'subject phone'
-        'message message';
-      gap: 1.2rem;
-      margin-bottom: 2rem;
-
-      // GRID AREAS
-      .name-input {
-        grid-area: name;
-      }
-      .subject-input {
-        grid-area: subject;
-      }
-      .email-input {
-        grid-area: email;
-      }
-      .phone-input {
-        grid-area: phone;
-      }
-      .message-input {
-        grid-area: message;
-        height: 10rem;
-      }
-
-      .text-input {
-        padding: 0.8rem 1.6rem;
-      }
-    }
-    button[type='submit'] {
-      width: 50%;
-    }
   }
 
-  &-b {
-    .contact-info {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      text-align: center;
-      width: 70%;
-      gap: 2rem;
-      margin: 0 auto;
-      div {
-        background-color: red;
-      }
-    }
-  }
+  // &-b {
+  //   // .contact-info {
+  //   //   display: grid;
+  //   //   grid-template-columns: repeat(3, 1fr);
+  //   //   text-align: center;
+  //   //   width: 70%;
+  //   //   gap: 2rem;
+  //   //   margin: 0 auto;
+  //   //   div {
+  //   //     background-color: red;
+  //   //   }
+  //   // }
+  // }
   &-c {
     h1 {
       text-align: center;
