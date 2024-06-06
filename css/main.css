@@ -692,38 +692,6 @@ img {
     #contact-a .contact-info-container a:hover {
       background-color: #ffbc00; }
 
-#contact-a .text-fields {
-  display: grid;
-  grid-template-areas: 'name email' 'subject phone' 'message message';
-  gap: 1.2rem;
-  margin-bottom: 2rem; }
-  #contact-a .text-fields .name-input {
-    grid-area: name; }
-  #contact-a .text-fields .subject-input {
-    grid-area: subject; }
-  #contact-a .text-fields .email-input {
-    grid-area: email; }
-  #contact-a .text-fields .phone-input {
-    grid-area: phone; }
-  #contact-a .text-fields .message-input {
-    grid-area: message;
-    height: 10rem; }
-  #contact-a .text-fields .text-input {
-    padding: 0.8rem 1.6rem; }
-
-#contact-a button[type='submit'] {
-  width: 50%; }
-
-#contact-b .contact-info {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: center;
-  width: 70%;
-  gap: 2rem;
-  margin: 0 auto; }
-  #contact-b .contact-info div {
-    background-color: red; }
-
 #contact-c h1 {
   text-align: center;
   font-size: 4rem; }
@@ -906,19 +874,6 @@ img {
   #about-d .testimonials,
   .items {
     grid-template-columns: 1fr; }
-  #contact-a .text-fields {
-    grid-template-areas: 'name' 'email' 'subject' 'phone' 'message'; }
-  #contact-b .contact-info {
-    grid-template-columns: 1fr;
-    gap: 2rem; }
-    #contact-b .contact-info div {
-      margin-bottom: 1.6rem;
-      padding-bottom: 1.6rem;
-      border-bottom: 0.1rem dotted #555; }
-      #contact-b .contact-info div:last-child {
-        padding-bottom: 0;
-        margin-bottom: 0;
-        border: none; }
   #contact-c h1 {
     font-size: 3.4rem; }
   #about-a .about-info {
