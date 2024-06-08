@@ -35,20 +35,11 @@
   #home {
     &-a {
       .specials > * {
-        // border-bottom: 3px dotted $primary-color !important;
         padding-bottom: 1.6rem;
+      }
 
-        &:last-child {
-          // border: none !important;
-          // padding-bottom: 0 !important;
-        }
-      }
-      .section-title {
-        // font-size: 2.8rem;
-      }
       p.lead {
         max-width: 100%;
-        // background-color: red;
       }
     }
   }
@@ -186,6 +177,12 @@
 }
 
 @media (max-width: 500px) {
+  // GRID CONTAINER
+  .grid-container {
+    .section-title {
+      font-size: 2.4rem;
+    }
+  }
   .process > {
     div {
       border-bottom: 3px dotted $primary-color;
@@ -199,17 +196,19 @@
       .specials > * {
         border-bottom: 3px dotted $primary-color !important;
         padding-bottom: 1.6rem;
+
         &:last-child {
           border: none !important;
           padding-bottom: 0 !important;
         }
       }
+
       .section-title {
         font-size: 2.8rem;
       }
+
       p.lead {
         max-width: 100%;
-        // background-color: red;
       }
     }
   }
@@ -260,22 +259,6 @@
 
   // CONTACT
   #contact {
-    // &-b {
-    //   .contact-info {
-    //     grid-template-columns: 1fr;
-    //     gap: 2rem;
-    //     div {
-    //       margin-bottom: 1.6rem;
-    //       padding-bottom: 1.6rem;
-    //       border-bottom: 0.1rem dotted #555;
-    //       &:last-child {
-    //         padding-bottom: 0;
-    //         margin-bottom: 0;
-    //         border: none;
-    //       }
-    //     }
-    //   }
-    // }
     &-c {
       h1 {
         font-size: 3.4rem;
@@ -304,18 +287,8 @@
     }
     &-c {
       padding: 2rem 0;
-
-      .about-logos {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        max-width: 100%;
-
-        margin: 0 auto;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-      }
     }
+
     &-d {
       .testimonials div {
         text-align: center;
@@ -327,10 +300,29 @@
     }
   }
 
+  // ABOUT C: LOGOS
+  #about-c {
+    .about-logos {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 15%;
+      }
+
+      img:last-of-type {
+        width: 15%;
+      }
+    }
+  }
   // SECTION BUTTONS
   #section-buttons {
     height: 50vh;
   }
+
   // FOOTER
   .footer {
     &-icons {
@@ -344,6 +336,7 @@
       flex-direction: column-reverse;
       align-items: center;
       padding-top: 2rem;
+
       p {
         font-size: 1.8rem !important;
       }
@@ -357,18 +350,222 @@
       width: 90% !important;
     }
   }
+
+  #contact-c {
+    padding: 3rem 0;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
 }
 
-@media (max-width: 330px) {
-  // HEADER
+@media (max-width: 376px) {
+  // FOOTER
+  #main-footer {
+    .footer {
+      &-icons {
+        i {
+          font-size: 3rem;
+        }
+      }
+      &-nav {
+        ul {
+          width: 90% !important;
+        }
+
+        li a {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}
+
+// IPHONE 5/SE
+@media (max-width: 350px) {
+  // HEADER HOME
   #header {
     &-home {
-      // height: 47rem;
+      height: 38rem;
 
       .header-content {
         h1 {
-          // font-size: 4rem;
+          font-size: 3rem;
+          line-height: 1.3;
         }
+
+        .lead {
+          font-size: 2.6rem;
+
+          .text-main {
+            font-size: 2.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  .header-content {
+    .flex-buttons {
+      a {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  // HOME A: SPECIALIZE
+  #home {
+    &-a {
+      .section-title {
+        font-size: 2.8rem;
+      }
+      .lead {
+        font-size: 1.9rem;
+      }
+    }
+  }
+
+  // HOME B:
+  #home-b {
+    .stats {
+      div {
+        padding: 0.5rem 0;
+        padding-top: 1rem;
+      }
+
+      li {
+        &.stats-number {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+
+  // HOME C: PROCESS
+  #home {
+    &-c {
+      .section-title {
+        font-size: 2.8rem;
+      }
+
+      .lead {
+        font-size: 1.9rem;
+        line-height: 1.3;
+      }
+    }
+  }
+
+  // SECTION BUTTONS
+  #section-buttons {
+    .section-title {
+      font-size: 2.8rem;
+    }
+
+    .lead {
+      font-size: 1.9rem;
+    }
+  }
+
+  // BUTTONS
+  %btn-shared {
+    font-size: 1.8rem;
+  }
+
+  // SECTION TITLE
+  .section-title {
+    font-size: 2.8rem !important;
+  }
+
+  // SECTION C: TAGLINE
+  #contact-c {
+    padding: 3rem 0;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  // ABOUT A
+  #about-a {
+    .lead {
+      line-height: 1.2;
+      font-size: 2rem;
+    }
+
+    .bio {
+      h4 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+      }
+
+      a {
+        font-size: 1.1rem !important;
+        margin: 0rem !important;
+      }
+
+      p {
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
+
+  // ABOUT C: LOGOS
+  #about-c {
+    .about-logos {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+
+      img {
+        width: 15%;
+      }
+
+      img:last-of-type {
+        width: 15%;
+      }
+    }
+  }
+
+  #about-d {
+    .testimonials {
+      grid-template-columns: 1fr;
+
+      p {
+        text-align: left;
+      }
+
+      ul {
+        margin-top: 1rem;
+        width: 100%;
+      }
+    }
+  }
+
+  // WORK A
+  #work-a {
+    h2:last-of-type {
+      font-size: 2.2rem;
+      line-height: 1.2;
+    }
+
+    .lead {
+      width: 100%;
+    }
+  }
+  // CONTACT A
+  #contact-a {
+    .contact-info-container {
+      flex-wrap: wrap;
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+
+      a {
+        width: 90%;
+        padding: 0.5rem;
+        font-size: 1.5rem;
       }
     }
   }
@@ -376,23 +573,30 @@
   // FOOTER
   #main-footer {
     .footer {
+      &-icons {
+        i {
+          font-size: 3rem;
+        }
+      }
+      &-nav {
+        ul {
+          width: 100% !important;
+        }
+
+        li a {
+          font-size: 1.6rem;
+        }
+      }
+
       &-content {
         text-align: center;
       }
-      &-icons {
-        width: 80%;
-        display: flex;
-      }
-      &-nav ul {
-        // background-color: red;
-      }
+
       &-text p:nth-child(1) {
         font-size: 1.5rem;
       }
     }
   }
-
-  // WORK PAGE
 }
 
 // LANDSCAPE
