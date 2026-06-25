@@ -15,393 +15,453 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/preloader.css" />
     <title>
-      Thiago Silva | Tecnologia Integrada - Desenvolvimento de Websites,
-      Linktree, Planilhas do Excel e E-mails profissionais
+      Home - Thiago Silva | Tecnologia Integrada - Desenvolvimento de Websites,
+      Linktree, Planilhas do Excel, Domínios e E-mails Profissionais.
     </title>
+    <script>
+      if (sessionStorage.getItem("preloaderExecutado") !== "true") {
+        document.documentElement.classList.add("com-loader");
+      }
+    </script>
   </head>
 
   <body id="top">
-    <!-- HEADER -->
-    <header id="header-home">
-      <div class="container">
-        <nav id="main-nav">
-          <a href="index.html" id="logo">Ts</a>
-          <ul>
-            <li><a href="index.html" class="current">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="header-content">
-          <h1>
-            I Am Thiago The
-            <span
-              class="txt-type"
-              data-wait="3000"
-              data-words='["Web Developer","UI/UX Dev"]'
-            ></span>
-          </h1>
+    <!-- preloader -->
+    <div class="preloader">
+      <img src="images/logo/Logomarca Transparente - Thiago Silva.png" alt="" />
+      <div class="counter">
+        <h1></h1>
+        <hr />
+      </div>
+    </div>
+    <main class="main">
+      <!-- <div id="overlay"></div> -->
+      <!-- HEADER -->
+      <header id="header-home">
+        <div class="container">
+          <nav id="main-nav">
+            <a href="index.html" id="logo">
+              <img
+                src="images/logo/Logomarca Transparente - Thiago Silva.png"
+                alt=""
+              />
+            </a>
+            <ul>
+              <li><a href="index.html" class="current">Home</a></li>
+              <li><a href="about.html">Sobre</a></li>
+              <li><a href="work.html">Projetos</a></li>
+              <li><a href="contact.html">Contato</a></li>
+            </ul>
+          </nav>
+          <div class="header-content">
+            <h1>
+              Thiago Silva
+              <span
+                class="txt-type"
+                data-wait="3000"
+                data-words='["Tecnologia Integrada"]'
+              ></span>
+            </h1>
+            <p class="lead">
+              Transformando <span class="text-main">ideias</span> em projetos
+            </p>
+            <div class="flex-buttons">
+              <a href="work.html" class="btn-main"
+                >Projetos Desenvolvidos <i class="fas fa-chevron-right"></i>
+              </a>
+              <a
+                href="docs/CV_Thiago Pereira_English.pdf"
+                download="curriculoThiago"
+                class="btn-secondary"
+                >Entre em contato
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- SECTION A: SPECIALIZE -->
+      <section id="home-a" class="text-center py-3">
+        <div class="container">
+          <h2 class="section-title">I Specialize In</h2>
+          <div class="bottom-line"></div>
           <p class="lead">
-            I bring <span clx ass="text-main">ideas</span> to web
+            My specialization is ensuring that the website is visually
+            attractive, easy to navigate, responsive to mobile devices and
+            accessible for people with disabilities.
           </p>
+          <div class="specials">
+            <div>
+              <i class="fas fa-file-alt fa-3x"></i>
+              <h3>Concepting</h3>
+              <p>
+                All projects are based on customer needs: from project concept
+                to production using best practices.
+              </p>
+            </div>
+
+            <div>
+              <i class="fas fa-desktop fa-3x"></i>
+              <h3>UI/UX</h3>
+              <p>
+                Great user interface and user experience (UI/UX) ensuring
+                interactivity, look, and feel of a product screen or web page.
+              </p>
+            </div>
+
+            <div>
+              <i class="fas fa-object-ungroup fa-3x"></i>
+              <h3>Visual Design</h3>
+              <p>
+                Visual design using images, colour, shapes, typography, and form
+                to enhance usability and improve the user experience.
+              </p>
+            </div>
+
+            <div>
+              <i class="fas fa-thumbs-up fa-3x"></i>
+              <h3>Interaction</h3>
+              <p>
+                Interactive websites with animated buttons, parallax effects,
+                calls to action, grids, cards, scroll to top and more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOME GRID:  -->
+      <section id="grid" class="text-center py-4 bg-dark">
+        <div class="container">
+          <div class="grid-container">
+            <div class="grid-left">
+              <h2 class="section-title">Alguns projetos desenvolvidos</h2>
+              <h3>Soluções e Websites desenvolvidos para alguns clientes</h3>
+              <p class="lead">
+                Desenvolvi alguns projetos de front-end para todos tipos e
+                setores de empresas. Clique no link abaixo para ver a
+                demonstração do projeto ou acesse todos os arquivos na minha
+                página de trabalhos.
+              </p>
+              <a target="_blank" href="https://mtpsilva.netlify.app/">
+                <span class="text-emphasis">Advocacia </span> ,</a
+              >
+              <a target="_blank" href="https://hulutpsilva.netlify.app/">
+                <span class="text-emphasis">Artesanato</span>,
+              </a>
+              <a target="_blank" href="https://spacextpsilva.netlify.app/">
+                <span class="text-emphasis">Academias</span> ,</a
+              >
+              <!-- <a target="_blank" href="https://previewtpsilva.netlify.app/">
+            <span class="text-emphasis">Netflix &copy;</span> ,</a> -->
+              <a target="_blank" href="https://mytunestpsilva.netlify.app/">
+                <span class="text-emphasis">Personal Trainner</span> ,</a
+              >
+              <a
+                target="_blank"
+                href="https://thiagotpsilva.github.io/UnderConstruction_Website/"
+              >
+                <span class="text-emphasis">Gráficas</span> ,</a
+              >
+              <br /><br />
+              <a
+                href="work.html"
+                rel="noopener noreferrer"
+                aria-label="Aceder ao meu perfil no github"
+                class="btn btn-cv btn-light"
+                >Ver mais projetos <i class="fas fa-chevron-right"></i
+              ></a>
+              <!-- <a
+                target="_blank"
+                href="https://github.com/thiagotpsilva"
+                rel="noopener noreferrer"
+                aria-label="Aceder ao meu perfil no GitHub"
+                class="btn btn-cv btn-light"
+                >Github Project Files > <i class="fas fa-chevron-right"></i
+              ></a> -->
+            </div>
+            <div class="grid-right">
+              <img
+                class="grid-image"
+                src="images/projects/project_01.png"
+                alt="Microsoft Snapshot"
+              />
+              <img
+                class="grid-image"
+                src="images/projects/project_02.png"
+                alt="Hulu Snapshot"
+              />
+              <img
+                class="grid-image"
+                src="images/projects/project_03.png"
+                alt="SpaceX Snapshot"
+              />
+              <img
+                class="grid-image"
+                src="images/projects/project_04.png"
+                alt="Netflix Snapshot"
+              />
+              <img
+                class="grid-image"
+                src="images/projects/project_05.png"
+                alt="Itunes Snapshot"
+              />
+              <img
+                class="grid-image"
+                src="images/projects/project_06.png"
+                alt="Byd Snapshot"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION B: STATS -->
+      <section id="home-b" class="text-center py-4">
+        <div class="stats">
+          <div>
+            <ul>
+              <li><i class="fas fa-users fa-2x"></i></li>
+              <li class="stats-title">Clientes</li>
+              <li class="stats-number">> 10</li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li><i class="fas fa-award fa-2x"></i></li>
+              <li class="stats-title">Prêmios</li>
+              <li class="stats-number">3</li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li><i class="fas fa-hourglass-start fa-2x"></i></li>
+              <li class="stats-title">Horas Trabalhadas</li>
+              <li class="stats-number">> 7500</li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li><i class="fas fa-code-branch fa-2x"></i></li>
+              <li class="stats-title">Projetos</li>
+              <li class="stats-number">> 15</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section__clientes bg__light">
+        <div class="container">
+          <h2 class="section-title">
+            Empresas que tiram suas ideias do papel com a gente.
+          </h2>
+          <div class="bottom-line"></div>
+          <p class="lead">
+            Mais do que clientes, construímos parceiros de negócios. Conheça
+            algumas das empresas que confiam a sua identidade visual, papelaria
+            corporativa e campanhas promocionais à qualidade e pontualidade
+            comigo.
+          </p>
+          <div class="clientes__container">
+            <img src="images/clientes-logos/amanda_personal.jpg" alt="" />
+            <img src="images/clientes-logos/uaiBike.webp" alt="" />
+            <img src="images/clientes-logos/grafica_star.png" alt="" />
+            <img
+              src="images/clientes-logos/edison-sobrinh-advocacia.png"
+              alt=""
+            />
+            <img src="images/clientes-logos/rit.png" alt="" />
+            <img src="images/clientes-logos/academia_fonte.png" alt="" />
+            <img src="images/clientes-logos/alma_boho.jpg" alt="" />
+            <img src="images/clientes-logos/baruch_turismo.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- SECTION BUTTONS -->
+      <section id="section-buttons" class="text-center">
+        <div class="container">
+          <h2 class="section-title">Ainda ficou com dúvidas?</h2>
+          <h3 class="lead">
+            Clique nos links abaixo para acessar alguns de meus projetos
+            desenvolvidos ou, se preferir, entre em contato direto comigo pelo
+            WhatsApp.
+          </h3>
           <div class="flex-buttons">
             <a href="work.html" class="btn-main"
-              >View My Work <i class="fas fa-chevron-right"></i>
+              >Ver projetos<i class="fas fa-chevron-right"></i>
             </a>
-            <a
-              href="docs/CV_Thiago Pereira_English.pdf"
-              download="curriculoThiago"
-              class="btn-secondary"
-              >Download CV
-              <i class="fas fa-chevron-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- SECTION A: SPECIALIZE -->
-    <section id="home-a" class="text-center py-3">
-      <div class="container">
-        <h2 class="section-title">I Specialize In</h2>
-        <div class="bottom-line"></div>
-        <p class="lead">
-          My specialization is ensuring that the website is visually attractive,
-          easy to navigate, responsive to mobile devices and accessible for
-          people with disabilities.
-        </p>
-        <div class="specials">
-          <div>
-            <i class="fas fa-file-alt fa-3x"></i>
-            <h3>Concepting</h3>
-            <p>
-              All projects are based on customer needs: from project concept to
-              production using best practices.
-            </p>
-          </div>
-
-          <div>
-            <i class="fas fa-desktop fa-3x"></i>
-            <h3>UI/UX</h3>
-            <p>
-              Great user interface and user experience (UI/UX) ensuring
-              interactivity, look, and feel of a product screen or web page.
-            </p>
-          </div>
-
-          <div>
-            <i class="fas fa-object-ungroup fa-3x"></i>
-            <h3>Visual Design</h3>
-            <p>
-              Visual design using images, colour, shapes, typography, and form
-              to enhance usability and improve the user experience.
-            </p>
-          </div>
-
-          <div>
-            <i class="fas fa-thumbs-up fa-3x"></i>
-            <h3>Interaction</h3>
-            <p>
-              Interactive websites with animated buttons, parallax effects,
-              calls to action, grids, cards, scroll to top and more.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- HOME GRID:  -->
-    <section id="grid" class="text-center py-4 bg-dark">
-      <div class="container">
-        <div class="grid-container">
-          <div class="grid-left">
-            <h2 class="section-title">Some projects developed</h2>
-            <h3>Clone projects of large companies involved in technology</h3>
-            <p class="lead">
-              I developed some front end projects for technology-related
-              companies. Click on the link below to see the demo project or
-              access all the project files in my Work page.
-            </p>
-            <a target="_blank" href="https://mtpsilva.netlify.app/">
-              <span class="text-emphasis">Microsoft &copy;</span> ,</a
-            >
-            <a target="_blank" href="https://hulutpsilva.netlify.app/">
-              <span class="text-emphasis">Hulu &copy;</span>,
-            </a>
-            <a target="_blank" href="https://spacextpsilva.netlify.app/">
-              <span class="text-emphasis">SpaceX &copy;</span> ,</a
-            >
-            <!-- <a target="_blank" href="https://previewtpsilva.netlify.app/">
-            <span class="text-emphasis">Netflix &copy;</span> ,</a> -->
-            <a target="_blank" href="https://mytunestpsilva.netlify.app/">
-              <span class="text-emphasis">Itunes &copy;</span> ,</a
-            >
             <a
               target="_blank"
-              href="https://thiagotpsilva.github.io/UnderConstruction_Website/"
-            >
-              <span class="text-emphasis">BYD &copy;</span> ,</a
-            >
-            <br /><br />
-            <a
-              href="work.html"
               rel="noopener noreferrer"
-              aria-label="Aceder ao meu perfil no github"
-              class="btn btn-main"
-              >See more projects <i class="fas fa-chevron-right"></i
-            ></a>
+              aria-label="Aceder ao meu perfil no WhatsApp"
+              href="https://api.whatsapp.com/send/?phone=5531997071823&text&type=phone_number&app_absent=0"
+              class="btn-secondary"
+              >Entrar em contato <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION C: PROCESS -->
+      <section id="home-c" class="text-center py-4">
+        <div class="container">
+          <h2 class="section-title">O processo de desenvolvimento</h2>
+          <div class="bottom-line"></div>
+          <p class="lead">
+            Estas são algumas etapas iniciais que abrangem a fase de
+            planejamento e desenvolvimento do projeto para websites. As demais
+            fases — entrega de código, revisão e manutenção do projeto — não
+            foram descritas aqui.
+          </p>
+          <div class="process grid__2">
+            <div>
+              <i class="process-icon fas fa-file-alt fa-3x my-2">
+                <div class="process-step">1</div>
+              </i>
+              <h3>Discussão do Projeto</h3>
+              <p>
+                At this stage, a discussion takes place with the client about
+                the project to be developed.
+              </p>
+            </div>
+
+            <div>
+              <i class="process-icon fas fa-desktop fa-3x my-2">
+                <div class="process-step">2</div>
+              </i>
+              <h3>Brainstorming & Requisitos</h3>
+              <p>
+                Realizo uma reunião para alinhar ideias e definir conceitos e
+                necessidades do projeto. Nessa etapa, também verifico se o
+                cliente possui boas fotografias e o logotipo da empresa.
+              </p>
+            </div>
+
+            <div>
+              <i class="process-icon fas fa-object-ungroup fa-3x my-2">
+                <div class="process-step">3</div>
+              </i>
+              <h3>Eperiência do Usuário</h3>
+              <p>
+                Todo o planejamento visual (links, botões, cores, tipografia,
+                grade, seções, carrossel, cards e outros) é realizado em alguma
+                plataforma de criação de wireframes.
+              </p>
+            </div>
+
+            <div>
+              <i class="process-icon fas fa-thumbs-up fa-3x my-2">
+                <div class="process-step">4</div>
+              </i>
+              <h3>Desenvolvimento</h3>
+              <p>
+                Com todos os requisitos e recursos já definidos, inicia-se a
+                fase de desenvolvimento de código e são realizadas algumas
+                reuniões para demonstrar o progresso do projeto.
+              </p>
+            </div>
+          </div>
+          <p class="lead">
+            Após a fase de desenvolvimento, inicia-se a verificação de todo o
+            código (para projetos que envolvam desenvolvimento de websites) e
+            dos requisitos para dar início à fase de entrega do projeto ao
+            cliente. Todo o site é otimizado (imagens, código e
+            funcionalidades). <br />Para demais serviços, há reuniões de
+            alinhamento de ideias para melhor adequação das necessidades do
+            cliente ao projeto.
+          </p>
+          <a
+            href="docs/CV_Thiago Pereira_English.pdf"
+            download="curriculoThiago"
+            class="btn-secondary"
+            >Entre em contato
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer id="main-footer">
+        <div class="footer-content container">
+          <div class="footer-icons">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Aceder ao meu perfil no WhatsApp"
+              href="https://api.whatsapp.com/send/?phone=5531997071823&text&type=phone_number&app_absent=0"
+            >
+              <i class="fa-brands fa-whatsapp fa-2x"></i>
+            </a>
             <a
               target="_blank"
               href="https://github.com/thiagotpsilva"
               rel="noopener noreferrer"
               aria-label="Aceder ao meu perfil no GitHub"
             >
-              class="btn btn-cv btn-light">Github Project Files
-              <i class="fas fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="grid-right">
-            <img
-              class="grid-image"
-              src="images/projects/project_01.png"
-              alt="Microsoft Snapshot"
-            />
-            <img
-              class="grid-image"
-              src="images/projects/project_02.png"
-              alt="Hulu Snapshot"
-            />
-            <img
-              class="grid-image"
-              src="images/projects/project_03.png"
-              alt="SpaceX Snapshot"
-            />
-            <img
-              class="grid-image"
-              src="images/projects/project_04.png"
-              alt="Netflix Snapshot"
-            />
-            <img
-              class="grid-image"
-              src="images/projects/project_05.png"
-              alt="Itunes Snapshot"
-            />
-            <img
-              class="grid-image"
-              src="images/projects/project_06.png"
-              alt="Byd Snapshot"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION B: STATS -->
-    <section id="home-b" class="text-center py-4">
-      <div class="stats">
-        <div>
-          <ul>
-            <li><i class="fas fa-users fa-2x"></i></li>
-            <li class="stats-title">Clients</li>
-            <li class="stats-number">> 10</li>
-          </ul>
-        </div>
-
-        <div>
-          <ul>
-            <li><i class="fas fa-award fa-2x"></i></li>
-            <li class="stats-title">Awards</li>
-            <li class="stats-number">3</li>
-          </ul>
-        </div>
-
-        <div>
-          <ul>
-            <li><i class="fas fa-hourglass-start fa-2x"></i></li>
-            <li class="stats-title">Hours Worked</li>
-            <li class="stats-number">> 3500</li>
-          </ul>
-        </div>
-
-        <div>
-          <ul>
-            <li><i class="fas fa-code-branch fa-2x"></i></li>
-            <li class="stats-title">Projects</li>
-            <li class="stats-number">> 15</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION BUTTONS -->
-    <section id="section-buttons" class="text-center">
-      <div class="container">
-        <h2 class="section-title">Find out more</h2>
-        <h3 class="lead">
-          Click on the links below to access my work projects or to contact me
-          directly on WhatsApp
-        </h3>
-        <div class="flex-buttons">
-          <a href="work.html" class="btn-main"
-            >See projects<i class="fas fa-chevron-right"></i>
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Aceder ao meu perfil no WhatsApp"
-            href="https://api.whatsapp.com/send/?phone=5531997071823&text&type=phone_number&app_absent=0"
-            class="btn-secondary"
-            >Contact me <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION C: PROCESS -->
-    <section id="home-c" class="text-center py-4">
-      <div class="container">
-        <h2 class="section-title">My Creative Process</h2>
-        <div class="bottom-line"></div>
-        <p class="lead">
-          These are some initial steps that cover the planning and development
-          phase of the project. The other phases of project code delivery,
-          review and maintenance were not described here
-        </p>
-        <div class="process">
-          <div>
-            <i class="process-icon fas fa-file-alt fa-3x my-2">
-              <div class="process-step">1</div>
-            </i>
-            <h3>Discuss The Project</h3>
-            <p>
-              At this stage, a discussion takes place with the client about the
-              project to be developed.
-            </p>
-          </div>
-
-          <div>
-            <i class="process-icon fas fa-desktop fa-3x my-2">
-              <div class="process-step">2</div>
-            </i>
-            <h3>Brainstorming & Needs</h3>
-            <p>
-              I hold a meeting to align ideas and create project concepts and
-              needs. At this stage I also check whether the client has good
-              photographs and the company logo.
-            </p>
-          </div>
-
-          <div>
-            <i class="process-icon fas fa-object-ungroup fa-3x my-2">
-              <div class="process-step">3</div>
-            </i>
-            <h3>UI/UX Planning</h3>
-            <p>
-              All visual planning (Links, buttons, colors, typography, grid
-              sections, carousel, cards and others) is carried out on some
-              wireframing platform.
-            </p>
-          </div>
-
-          <div>
-            <i class="process-icon fas fa-thumbs-up fa-3x my-2">
-              <div class="process-step">4</div>
-            </i>
-            <h3>Development & Interaction</h3>
-            <p>
-              With all the requirements and resources already defined, the code
-              development phase begins and some meetings are held to demonstrate
-              the progress of the project.
-            </p>
-          </div>
-        </div>
-        <p class="lead">
-          After the development phase, the verification of all code and
-          requirements begins to begin the phase of delivering the project to
-          the client. The entire site is optimized (images, code and features).
-        </p>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer id="main-footer">
-      <div class="footer-content container">
-        <div class="footer-icons">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Aceder ao meu perfil no WhatsApp"
-            href="https://api.whatsapp.com/send/?phone=5531997071823&text&type=phone_number&app_absent=0"
-          >
-            <i class="fa-brands fa-whatsapp fa-2x"></i>
-          </a>
-          <a
-            target="_blank"
-            href="https://github.com/thiagotpsilva"
-            rel="noopener noreferrer"
-            aria-label="Aceder ao meu perfil no GitHub"
-          >
-            <i class="fab fa-github fa-2x"></i>
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Aceder ao meu perfil no X"
-            href="https://x.com/thiagotpsilva"
-          >
-            <i class="fa-brands fa-x-twitter fa-2x"></i>
-          </a>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/devthiagotpsilva"
-            rel="noopener noreferrer"
-            aria-label="Aceder ao meu perfil no LinkedIn"
-          >
-            <i class="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Aceder ao meu perfil no CodePen"
-            href="https://codepen.io/thiagotpsilva"
-          >
-            <i class="fab fa-codepen fa-2x"></i>
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Aceder ao meu perfil no Instagram"
-            href="https://www.instagram.com/ti.silper93"
-          >
-            <i class="fa-brands fa-instagram fa-2x"></i>
-          </a>
-        </div>
-        <div class="footer-nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-text">
-          <p>Copyright &copy; 2024 - 2026 | All Rights Reserved</p>
-          <p>
-            Developed By
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+            <!-- <a
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Aceder ao meu perfil no X"
+              href="https://x.com/thiagotpsilva"
+            >
+              <i class="fa-brands fa-x-twitter fa-2x"></i>
+            </a> -->
             <a
               target="_blank"
-              href="https://thiagotpsilva.github.io/portfolio/"
+              href="https://www.linkedin.com/in/devthiagopsilva/"
               rel="noopener noreferrer"
-              aria-label="Aceder ao meu perfil no GitHub"
-              >Thiago Silva
+              aria-label="Acesse meu perfil no LinkedIn"
+            >
+              <i class="fab fa-linkedin fa-2x"></i>
             </a>
-          </p>
+            <!-- <a
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Aceder ao meu perfil no CodePen"
+              href="https://codepen.io/thiagotpsilva"
+            >
+              <i class="fab fa-codepen fa-2x"></i>
+            </a> -->
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Acesse meu perfil no Instagram"
+              href="https://www.instagram.com/dev.thiagopsilva"
+            >
+              <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">Sobre</a></li>
+              <li><a href="work.html">Projetos</a></li>
+              <li><a href="contact.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-text">
+            <p>Copyright &copy; 2024 - 2026 | Todos os direitos Reservados</p>
+            <p>
+              Desenvolvido por
+              <a
+                target="_blank"
+                href="https://thiagotpsilva.github.io/portfolio/"
+                rel="noopener noreferrer"
+                aria-label="Aceder ao meu perfil no GitHub"
+                >Thiago Silva
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
-    </footer>
-
+      </footer>
+    </main>
     <!-- SCROLL TOP -->
     <a
       href="#top"
@@ -432,5 +492,7 @@
 
     <script src="js/typewriter.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/counter.js"></script>
   </body>
 </html>
